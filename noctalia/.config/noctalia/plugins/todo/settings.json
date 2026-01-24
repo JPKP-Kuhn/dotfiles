@@ -1,22 +1,7 @@
 {
-  "todos": [
-    {
-      "id": 1768607494626,
-      "text": "pesquisar mais sobre gnu stow",
-      "completed": false,
-      "createdAt": "2026-01-16T23:51:34.626Z",
-      "pageId": 0
-    },
-    {
-      "id": 1768598294250,
-      "text": "Integrar diferentes IA no PCI Concursos",
-      "completed": true,
-      "createdAt": "2026-01-16T21:18:14.250Z",
-      "pageId": 0
-    }
-  ],
-  "count": 2,
-  "completedCount": 1,
+  "todos": [],
+  "count": 0,
+  "completedCount": 0,
   "pages": [
     {
       "id": 0,
