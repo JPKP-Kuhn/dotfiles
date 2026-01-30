@@ -47,15 +47,7 @@
         "widgets": {
             "center": [
                 {
-                    "defaultSettings": {
-                        "completedCount": 0,
-                        "count": 0,
-                        "showBackground": true,
-                        "showCompleted": true,
-                        "todos": [
-                        ]
-                    },
-                    "id": "plugin:todo"
+                    "id": "plugin:simple-notes"
                 },
                 {
                     "customFont": "",
@@ -67,9 +59,25 @@
                     "usePrimaryColor": false
                 },
                 {
-                    "icon": "rocket",
-                    "id": "Launcher",
-                    "usePrimaryColor": true
+                    "colorName": "primary",
+                    "hideWhenIdle": false,
+                    "id": "AudioVisualizer",
+                    "width": 200
+                },
+                {
+                    "id": "NoctaliaPerformance"
+                },
+                {
+                    "defaultSettings": {
+                        "autoStartBreaks": false,
+                        "autoStartWork": false,
+                        "compactMode": false,
+                        "longBreakDuration": 15,
+                        "sessionsBeforeLongBreak": 4,
+                        "shortBreakDuration": 5,
+                        "workDuration": 25
+                    },
+                    "id": "plugin:pomodoro"
                 }
             ],
             "left": [
@@ -166,12 +174,6 @@
                 },
                 {
                     "defaultSettings": {
-                        "mode": "region"
-                    },
-                    "id": "plugin:screenshot"
-                },
-                {
-                    "defaultSettings": {
                         "audioCodec": "opus",
                         "audioSource": "default_output",
                         "colorRange": "limited",
@@ -188,16 +190,7 @@
                     "id": "plugin:screen-recorder"
                 },
                 {
-                    "defaultSettings": {
-                        "autoStartBreaks": false,
-                        "autoStartWork": false,
-                        "compactMode": false,
-                        "longBreakDuration": 15,
-                        "sessionsBeforeLongBreak": 4,
-                        "shortBreakDuration": 5,
-                        "workDuration": 25
-                    },
-                    "id": "plugin:pomodoro"
+                    "id": "plugin:privacy-indicator"
                 },
                 {
                     "colorizeDistroLogo": false,
@@ -315,7 +308,7 @@
         "colorizeIcons": true,
         "deadOpacity": 0.6,
         "displayMode": "auto_hide",
-        "enabled": true,
+        "enabled": false,
         "floatingRatio": 1,
         "inactiveIndicators": false,
         "monitors": [
@@ -347,7 +340,7 @@
         "shadowOffsetX": 2,
         "shadowOffsetY": 3,
         "showChangelogOnStartup": true,
-        "showHibernateOnLockScreen": false,
+        "showHibernateOnLockScreen": true,
         "showScreenCorners": true,
         "showSessionButtonsOnLockScreen": true
     },
@@ -499,9 +492,9 @@
         "memPollingInterval": 3000,
         "memWarningThreshold": 80,
         "networkPollingInterval": 3000,
-        "tempCriticalThreshold": 90,
+        "tempCriticalThreshold": 80,
         "tempPollingInterval": 3000,
-        "tempWarningThreshold": 80,
+        "tempWarningThreshold": 70,
         "useCustomColors": true,
         "warningColor": "#ff8c00"
     },

@@ -1,0 +1,30 @@
+{
+  "notes": [
+    {
+      "id": "1769742573707",
+      "title": "CSES reading",
+      "content": "Sorting algorithm, page 36\n",
+      "modifiedAt": "2026-01-30T03:13:02.328Z"
+    },
+    {
+      "id": "1769742769773",
+      "title": "halim reading",
+      "content": "Mastering testing teh code, page 48",
+      "modifiedAt": "2026-01-30T03:13:29.839Z"
+    },
+    {
+      "id": "1769742715885",
+      "title": "Monitor de repositórios",
+      "content": "Projetos\nPCI_Concursos\nMaratona de Programação\nCS50\ndotfiles",
+      "modifiedAt": "2026-01-30T03:11:55.885Z"
+    },
+    {
+      "id": "1769742376063",
+      "title": "PCI Concursos",
+      "content": "Tentar integrar groq ou outro llm com o gpt",
+      "modifiedAt": "2026-01-30T03:06:16.063Z"
+    }
+  ],
+  "showCountInBar": true,
+  "count": 4
+}

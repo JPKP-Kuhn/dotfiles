@@ -6,7 +6,9 @@ using vb = vector<bool>;
 using pl = pair<ll, ll>;
 using vpll = vector<pair<ll, ll>>;
 
-# define PI 3.141592653
+#define LSOne(S) ((S) & -(S)) // bit menos significativo ligado, bitmask
+
+// M_PI para número PI
 const ll MAXN = 1e5 + 10;// Range seguro para vetores e arrays
 const ll INF = 1e18+5;   // PD e inicialização de valor mínimo
 const ll MOD = 1e9+7;    // Valor comum para aritmética modular, números muito grandes
