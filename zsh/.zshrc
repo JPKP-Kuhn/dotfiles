@@ -133,6 +133,7 @@ alias reboot='systemctl reboot'
 alias py='python3'
 alias g++='g++ -Wall'
 alias code='code-insiders .'
+alias cat='bat --force-colorization'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
