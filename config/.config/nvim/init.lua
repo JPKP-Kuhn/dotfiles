@@ -36,6 +36,13 @@ vim.schedule(function()
   require "mappings"
 end)
 
+-- Indentation default 4 spaces
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
+vim.opt.expandtab = true
+vim.opt.autoindent = true
+
 -- template for c++
 vim.api.nvim_create_autocmd("BufNewFile", {
   pattern = "*.cpp",

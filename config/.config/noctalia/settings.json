@@ -41,14 +41,14 @@
         "autoShowDelay": 150,
         "backgroundOpacity": 0.93,
         "barType": "simple",
-        "capsuleColorKey": "none",
-        "capsuleOpacity": 1,
+        "capsuleColorKey": "tertiary",
+        "capsuleOpacity": 0.15,
         "density": "compact",
         "displayMode": "always_visible",
         "floating": false,
         "frameRadius": 12,
         "frameThickness": 8,
-        "hideOnOverview": false,
+        "hideOnOverview": true,
         "marginHorizontal": 4,
         "marginVertical": 4,
         "monitors": [
@@ -630,7 +630,7 @@
         "fontDefaultScale": 0.9,
         "fontFixed": "JetBrains Mono",
         "fontFixedScale": 1.05,
-        "networkPanelView": "ethernet",
+        "networkPanelView": "wifi",
         "panelBackgroundOpacity": 0.8,
         "panelsAttachedToBar": true,
         "settingsPanelMode": "attached",
@@ -643,6 +643,45 @@
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
+            {
+                "colorScheme": "Noctalia (default)",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#fff59b",
+                    "#a9aefe",
+                    "#9bfece",
+                    "#fd4663"
+                ],
+                "path": "/home/jpk/Imagens/wallpapers/sunny-day-forest-ghibli.png",
+                "useWallpaperColors": false
+            },
+            {
+                "colorScheme": "Noctalia (default)",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#fff59b",
+                    "#a9aefe",
+                    "#9bfece",
+                    "#fd4663"
+                ],
+                "path": "/home/jpk/Imagens/wallpapers/map-of-computer-science.png",
+                "useWallpaperColors": false
+            },
+            {
+                "colorScheme": "Noctalia (default)",
+                "darkMode": true,
+                "generationMethod": "tonal-spot",
+                "paletteColors": [
+                    "#fff59b",
+                    "#a9aefe",
+                    "#9bfece",
+                    "#fd4663"
+                ],
+                "path": "/home/jpk/Imagens/wallpapers/ascii-linux-hacking-tools.png",
+                "useWallpaperColors": false
+            }
         ],
         "fillColor": "#000000",
         "fillMode": "crop",
@@ -664,7 +703,7 @@
         "transitionType": "random",
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "single",
+        "viewMode": "browse",
         "wallhavenApiKey": "Irf0u4AEimOzUqR055lqtnzy61ulQRob",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
