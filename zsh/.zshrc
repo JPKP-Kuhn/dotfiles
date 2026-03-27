@@ -131,7 +131,6 @@ alias mv='mv -i'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias py='python3'
-alias g++='g++ -Wall'
 alias code='code-insiders .'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme

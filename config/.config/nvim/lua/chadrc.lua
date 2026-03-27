@@ -36,6 +36,14 @@ local options = {
       separator_style = "default",
       order = nil,
       modules = nil,
+      -- override = {
+      --     right = {
+      --         require("nvchad.status.heirline.clock"),
+      --         require("nvchad.status.heirline.lsp"),
+      --         require("nvchad.status.heirline.cwd"),
+      --         require("nvchad.status.heirline.cursor_position"),
+      --     }
+      -- }
     },
 
     -- lazyload it when there are 1+ buffers

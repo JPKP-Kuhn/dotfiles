@@ -348,7 +348,7 @@ window-rule {
 
 window-rule {
   match app-id="Alacritty"
-  open-maximized false
+  open-maximized true
 }
 
 // Open the Firefox picture-in-picture player as floating by default.

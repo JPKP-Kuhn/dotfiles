@@ -1,6 +1,18 @@
 {
   "notes": [
     {
+      "id": "1769742376063",
+      "title": "PCI Concursos",
+      "content": "Tentar integrar groq ou outro llm com o gpt; pesquisar sobre o haiku",
+      "modifiedAt": "2026-03-24T13:15:37.684Z"
+    },
+    {
+      "id": "1774358115190",
+      "title": "Finalizar estudo opencl",
+      "content": "https://programmerclick.com/article/47811146604/",
+      "modifiedAt": "2026-03-24T13:15:15.190Z"
+    },
+    {
       "id": "1770071143250",
       "title": "Noic",
       "content": "Estruturas de Dados Aula 0 explorando a STL, Map",
@@ -21,22 +33,16 @@
     {
       "id": "1769742715885",
       "title": "Monitor de repositórios",
-      "content": "Projetos\nSobre-mim\nPCI_Concursos\nMaratona de Programação\nCS50\ndotfiles",
-      "modifiedAt": "2026-02-01T14:24:06.640Z"
+      "content": "Projetos\nSobre-mim (Organizar as páginas)\nPCI_Concursos\nMaratona de Programação\nCS50\ndotfiles",
+      "modifiedAt": "2026-03-24T13:15:57.473Z"
     },
     {
       "id": "1769742573707",
       "title": "CSES reading",
       "content": "Sorting algorithm, Resolver problemas de sorting\n",
       "modifiedAt": "2026-02-01T14:23:32.781Z"
-    },
-    {
-      "id": "1769742376063",
-      "title": "PCI Concursos",
-      "content": "Tentar integrar groq ou outro llm com o gpt",
-      "modifiedAt": "2026-01-30T03:06:16.063Z"
     }
   ],
   "showCountInBar": true,
-  "count": 6
+  "count": 7
 }
