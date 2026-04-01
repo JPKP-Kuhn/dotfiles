@@ -7,6 +7,11 @@ fi
 
 autoload -Uz compinit && compinit
 
+export SSH_ASKPASS=/usr/bin/ksshaskpass
+zstyle :omz:plugins:ssh-agent identities id_ed25519 id_rsa ~/.ssh/id_github
+zstyle :omz:plugins:ssh-agent quiet yes
+zstyle :omz:plugins:ssh-agent lazy yes
+
 powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
@@ -89,6 +94,7 @@ plugins=(
   colored-man-pages
   zsh-autosuggestions
   zsh-syntax-highlighting
+  ssh-agent
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -131,7 +137,7 @@ alias mv='mv -i'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias py='python3'
-alias code='code-insiders .'
+alias code='code-insiders'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
