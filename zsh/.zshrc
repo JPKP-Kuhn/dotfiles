@@ -6,16 +6,17 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 autoload -Uz compinit && compinit
+export PATH="/usr/bin:/usr/local/bin:/bin:/usr/sbin:/usr/local/sbin:/$HOME/.local/bin"
 
 export SSH_ASKPASS=/usr/bin/ksshaskpass
 zstyle :omz:plugins:ssh-agent identities id_ed25519 id_rsa ~/.ssh/id_github
 zstyle :omz:plugins:ssh-agent quiet yes
 zstyle :omz:plugins:ssh-agent lazy yes
 
-powerline-daemon -q
+ powerline-daemon -q
 . /usr/share/powerline/bindings/zsh/powerline.zsh
 
-# export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -62,7 +63,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -81,7 +82,7 @@ DISABLE_UNTRACKED_FILES_DIRTY="true"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+HIST_STAMPS="dd/mm/yyyy"
 
 
 # Which plugins would you like to load?
@@ -139,6 +140,8 @@ alias reboot='systemctl reboot'
 alias py='python3'
 alias code='code-insiders'
 
+alias update='sudo pacman -Syu --refresh && yay -Syu --noconfirm'
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
@@ -152,3 +155,4 @@ function y() {
 	[ "$cwd" != "$PWD" ] && [ -d "$cwd" ] && builtin cd -- "$cwd"
 	rm -f -- "$tmp"
 }
+export PATH="$(npm config get prefix)/bin:$PATH"
