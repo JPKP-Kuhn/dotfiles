@@ -92,10 +92,12 @@ HIST_STAMPS="dd/mm/yyyy"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
   git
+  gh
   colored-man-pages
   zsh-autosuggestions
   zsh-syntax-highlighting
   ssh-agent
+  copybuffer
   )
 
 source $ZSH/oh-my-zsh.sh
