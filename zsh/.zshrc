@@ -5,6 +5,9 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+# Enable visual code copilot to execute commands in terminal
+[[ "$TERM_PROGRAM" == "vscode" ]] && . "$(code-insiders --locate-shell-integration-path zsh)"
+
 autoload -Uz compinit && compinit
 export PATH="/usr/bin:/usr/local/bin:/bin:/usr/sbin:/usr/local/sbin:/$HOME/.local/bin"
 
@@ -31,6 +34,14 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Mostra ícone de sucesso (0) ou erro (≠0)
+POWERLEVEL10K_STATUS_OK=true
+POWERLEVEL10K_STATUS_CROSS=false
+
+# Mostra o código de erro numérico quando falha
+POWERLEVEL10K_STATUS_HIDE_SIGNAME=false
+POWERLEVEL10K_STATUS_SHOW_PIPESTATUS=true
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -142,7 +153,7 @@ alias reboot='systemctl reboot'
 alias py='python3'
 alias code='code-insiders'
 
-alias update='sudo pacman -Syu --refresh && yay -Syu --noconfirm'
+alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
