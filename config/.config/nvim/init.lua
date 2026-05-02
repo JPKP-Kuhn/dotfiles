@@ -5,8 +5,8 @@ vim.g.mapleader = " "
 local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 
 if not vim.uv.fs_stat(lazypath) then
-  local repo = "https://github.com/folke/lazy.nvim.git"
-  vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
+    local repo = "https://github.com/folke/lazy.nvim.git"
+    vim.fn.system { "git", "clone", "--filter=blob:none", repo, "--branch=stable", lazypath }
 end
 
 vim.opt.rtp:prepend(lazypath)
@@ -15,14 +15,14 @@ local lazy_config = require "configs.lazy"
 
 -- load plugins
 require("lazy").setup({
-  {
-    "NvChad/NvChad",
-    lazy = false,
-    branch = "v2.5",
-    import = "nvchad.plugins",
-  },
+    {
+        "NvChad/NvChad",
+        lazy = false,
+        branch = "v2.5",
+        import = "nvchad.plugins",
+    },
 
-  { import = "plugins" },
+    { import = "plugins" },
 }, lazy_config)
 
 -- load theme
@@ -33,10 +33,11 @@ require "options"
 require "autocmds"
 
 vim.schedule(function()
-  require "mappings"
+    require "mappings"
 end)
 
 -- Indentation default 4 spaces
+vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
@@ -45,28 +46,28 @@ vim.opt.autoindent = true
 
 -- template for c++
 vim.api.nvim_create_autocmd("BufNewFile", {
-  pattern = "*.cpp",
-  callback = function()
-    local template_path = vim.fn.stdpath("config") .. "/lua/templates/template.cpp"
-    if vim.fn.filereadable(template_path) == 1 then
-      vim.cmd("0read " .. template_path)
-      vim.api.nvim_win_set_cursor(0, {34, 2})
-    else
-      print("Template não encontrado: " .. template_path)
-    end
-  end,
+    pattern = "*.cpp",
+    callback = function()
+        local template_path = vim.fn.stdpath "config" .. "/lua/templates/template.cpp"
+        if vim.fn.filereadable(template_path) == 1 then
+            vim.cmd("0read " .. template_path)
+            vim.api.nvim_win_set_cursor(0, { 34, 2 })
+        else
+            print("Template não encontrado: " .. template_path)
+        end
+    end,
 })
 
 -- template for c
 vim.api.nvim_create_autocmd("BufNewFile", {
-  pattern = "*.c",
-  callback = function()
-    local template_path = vim.fn.stdpath("config") .. "/lua/templates/template.c"
-    if vim.fn.filereadable(template_path) == 1 then
-      vim.cmd("0read " .. template_path)
-      vim.api.nvim_win_set_cursor(0, {3, 0})
-    else
-      print("Template não encontrado: " .. template_path)
-    end
-  end,
+    pattern = "*.c",
+    callback = function()
+        local template_path = vim.fn.stdpath "config" .. "/lua/templates/template.c"
+        if vim.fn.filereadable(template_path) == 1 then
+            vim.cmd("0read " .. template_path)
+            vim.api.nvim_win_set_cursor(0, { 3, 0 })
+        else
+            print("Template não encontrado: " .. template_path)
+        end
+    end,
 })

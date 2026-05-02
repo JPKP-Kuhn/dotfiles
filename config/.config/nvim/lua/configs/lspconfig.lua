@@ -1,7 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
-vim.lsp.enable('pyright')
-vim.lsp.enable('clangd')
-vim.lsp.enable('opencl_language_server')
+local servers = { "pyright", "clangd", "python-lsp-server", "lua-language-server", "clangd-format" }
+vim.lsp.enable(servers)
 
--- read :h vim.lsp.config for changing options of lsp servers 
+-- read :h vim.lsp.config for changing options of lsp servers
