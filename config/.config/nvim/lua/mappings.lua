@@ -4,15 +4,14 @@ require "nvchad.mappings"
 
 local map = vim.keymap.set
 
-map("n", "9", "$", {noremap = true, silent = true})
+map("n", "9", "$", { noremap = true, silent = true })
 
 map("n", ";", ":", { desc = "CMD enter command mode" })
-map("i", "jk", "<ESC>")
 
-map({ "n", "i", "v" }, "<C-s>", function ()
-  vim.cmd('normal! gg=G')
-  vim.cmd('write')
-end, {desc = "Identa e salva o arquivo"})
+map({ "n", "i", "v" }, "<C-s>", function()
+    vim.cmd "normal! gg=G"
+    vim.cmd "write"
+end, { desc = "Identa e salva o arquivo" })
 
 -- Somar 1 ao número sob o cursor
 -- map("n", "<C-=>", "<C-a>", { noremap = true, silent = true, desc = "Incrementar número (Ctrl + =)" })
@@ -41,4 +40,3 @@ map("v", "<A-k>", ":m '<-2<CR>gv=gv", { noremap = true, silent = true, desc = "M
 
 -- Mover bloco selecionado para baixo no modo visual
 map("v", "<A-j>", ":m '>+1<CR>gv=gv", { noremap = true, silent = true, desc = "Mover bloco para baixo" })
-

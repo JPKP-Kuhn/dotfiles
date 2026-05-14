@@ -38,9 +38,9 @@ end)
 
 -- Indentation default 4 spaces
 vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-vim.opt.tabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.softtabstop = 4
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 
@@ -51,7 +51,7 @@ vim.api.nvim_create_autocmd("BufNewFile", {
         local template_path = vim.fn.stdpath "config" .. "/lua/templates/template.cpp"
         if vim.fn.filereadable(template_path) == 1 then
             vim.cmd("0read " .. template_path)
-            vim.api.nvim_win_set_cursor(0, { 34, 2 })
+            vim.api.nvim_win_set_cursor(0, { 37, 2 })
         else
             print("Template não encontrado: " .. template_path)
         end

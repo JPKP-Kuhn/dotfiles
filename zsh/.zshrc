@@ -21,6 +21,8 @@ zstyle :omz:plugins:ssh-agent lazy yes
 
 export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
+export QT_QPA_PLATFORM=wayland
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export REPORTTIME=1
