@@ -1,0 +1,29 @@
+{
+  "activeBackend": "qt6-multimedia",
+  "automationMode": "random",
+  "automationTime": 300,
+  "fillMode": "fit",
+  "mpvSocket": "/tmp/mpv-socket",
+  "profile": "default",
+  "volume": 1,
+  "wallpapersFolder": "/home/jpk/Imagens/wallpapers",
+  "thumbCacheReady": true,
+  "enabled": false,
+  "monitorSpecific": false,
+  "eDP-1": {
+    "currentWallpaper": "",
+    "volume": 1,
+    "automation": false,
+    "automationMode": "random",
+    "automationTime": 300,
+    "hardwareAcceleration": false,
+    "profile": "default",
+    "fillMode": "",
+    "orientation": 0,
+    "noctaliaWallpaper": "/home/jpk/Imagens/wallpapers/greece-night-landmark-history.jpg",
+    "isPlaying": true,
+    "isMuted": true
+  },
+  "automationCustomTime": []
+}
+

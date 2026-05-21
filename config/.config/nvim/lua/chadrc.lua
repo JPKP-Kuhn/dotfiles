@@ -5,7 +5,7 @@
 local options = {
 
   base46 = {
-    theme = "catppuccin", -- default theme
+    theme = "chadracula-evondev", -- default theme
     hl_add = {},
     hl_override = {
       Comment = { fg = "#6A9955" , italic = true },
@@ -14,7 +14,7 @@ local options = {
     integrations = {},
     changed_themes = {},
     transparency = false,
-    theme_toggle = { "catppuccin", "one_light" },
+    theme_toggle = { "chadracula-evondev", "one_light" },
   },
 
   ui = {

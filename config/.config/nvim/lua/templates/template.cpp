@@ -8,6 +8,7 @@ using namespace std;
 #define sc second
 #define pb push_back
 #define all(x) x.begin(), x.end()
+#define rall(x) x.rbegin(), x.rend()
 #define LSOne(S) ((S) & -(S)) // bit menos significativo ligado, bitmask
 
 using ll = long long;

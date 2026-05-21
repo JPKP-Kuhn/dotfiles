@@ -266,6 +266,20 @@ layout {
     }
 }
 
+overview {
+  backdrop-color "#00000040"
+}
+
+layer-rule {
+    match namespace="^awww$"  // Wallpaper principal
+    place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="^overview$"  // Wallpaper específico do overview  
+    place-within-backdrop true
+}
+
 // Add lines like this to spawn processes at startup.
 // Note that running niri as a session supports xdg-desktop-autostart,
 // which may be more convenient to use.
@@ -275,6 +289,9 @@ layout {
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "poweralertd"
 spawn-at-startup "hypridle"
+
+spawn-at-startup "awww" "-b" "/home/jpk/Imagens/wallpapers/linux-land-map.png" "--output" "*" "--mode" "fill"
+spawn-at-startup "awww" "-b" "/home/jpk/Imagens/wallpapers/linux-land-map.png" "--output" "*" "--mode" "fill" "--name" "overview"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
@@ -438,7 +455,7 @@ binds {
     // or do a four-finger swipe up on a touchpad.
     Mod+O repeat=true { toggle-overview; }
 
-    Mod+Q repeat=true { close-window; }
+    Mod+Q repeat=false { close-window; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }

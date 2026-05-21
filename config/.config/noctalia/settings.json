@@ -113,10 +113,6 @@
                     "width": 200
                 },
                 {
-                    "iconColor": "none",
-                    "id": "NoctaliaPerformance"
-                },
-                {
                     "defaultSettings": {
                         "autoStartBreaks": false,
                         "autoStartWork": false,
@@ -126,6 +122,23 @@
                         "workDuration": 25
                     },
                     "id": "plugin:pomodoro"
+                },
+                {
+                    "defaultSettings": {
+                        "activeBackend": "qt6-multimedia",
+                        "automationMode": "random",
+                        "automationTime": 300,
+                        "fillMode": "fit",
+                        "mpvSocket": "/tmp/mpv-socket",
+                        "profile": "default",
+                        "volume": 1,
+                        "wallpapersFolder": "~/Pictures/Wallpapers"
+                    },
+                    "id": "plugin:video-wallpaper"
+                },
+                {
+                    "iconColor": "none",
+                    "id": "WallpaperSelector"
                 }
             ],
             "left": [
@@ -329,7 +342,7 @@
         "shortcuts": {
             "left": [
                 {
-                    "id": "WallpaperSelector"
+                    "id": "NoctaliaPerformance"
                 },
                 {
                     "id": "Network"
@@ -820,7 +833,7 @@
         ],
         "fillColor": "#000000",
         "fillMode": "crop",
-        "hideWallpaperFilenames": false,
+        "hideWallpaperFilenames": true,
         "linkLightAndDarkWallpapers": true,
         "monitorDirectories": [
             {
@@ -838,7 +851,7 @@
         "showHiddenFiles": true,
         "skipStartupTransition": false,
         "solidColor": "#1a1a2e",
-        "sortOrder": "date_desc",
+        "sortOrder": "date_asc",
         "transitionDuration": 1500,
         "transitionEdgeSmoothness": 0.05,
         "transitionType": [
@@ -852,7 +865,7 @@
         "useOriginalImages": false,
         "useSolidColor": false,
         "useWallhaven": false,
-        "viewMode": "recursive",
+        "viewMode": "browse",
         "wallhavenApiKey": "Irf0u4AEimOzUqR055lqtnzy61ulQRob",
         "wallhavenCategories": "111",
         "wallhavenOrder": "desc",
