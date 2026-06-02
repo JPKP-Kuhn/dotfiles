@@ -17,7 +17,7 @@ using vb = vector<bool>;
 using pl = pair<ll, ll>;
 using vpll = vector<pair<ll, ll>>;
 
-// M_PI para número PI
+const double PI = 3.14159265358979323846;
 const ll MAXN = 1e5 + 10; // Range seguro para vetores e arrays
 const ll INF = 1e18 + 5;  // PD e inicialização de valor mínimo
 const ll MOD = 1e9 + 7;   // aritmética modular, números muito grandes
