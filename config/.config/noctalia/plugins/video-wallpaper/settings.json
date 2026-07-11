@@ -20,10 +20,13 @@
     "profile": "default",
     "fillMode": "",
     "orientation": 0,
-    "noctaliaWallpaper": "/home/jpk/Imagens/wallpapers/greece-night-landmark-history.jpg",
+    "noctaliaWallpaper": "/home/jpk/Imagens/wallpapers/keyboards-games.jpg",
     "isPlaying": true,
     "isMuted": true
   },
-  "automationCustomTime": []
+  "automationCustomTime": [],
+  "HDMI-A-1": {
+    "currentWallpaper": "/home/jpk/Imagens/wallpapers/black-hole-gargantua-moewalls-com.mp4",
+    "noctaliaWallpaper": "/home/jpk/Imagens/wallpapers/keyboards-games.jpg"
+  }
 }
-

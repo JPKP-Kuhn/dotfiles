@@ -1,16 +1,34 @@
 {
   "notes": [
     {
-      "id": "1769742715885",
-      "title": "Monitor de repositórios",
-      "content": "Projetos\nSobre-mim (Organizar as páginas)\nPCI_Concursos\nMaratona de Programação\nCS50\ndotfiles",
-      "modifiedAt": "2026-04-06T18:08:00.183Z"
+      "id": "1783633702126",
+      "title": "Learn OpenCL",
+      "content": "https://ulhpc-tutorials.readthedocs.io/en/latest/gpu/opencl/\nhttps://handsonopencl.github.io/",
+      "modifiedAt": "2026-07-09T21:48:56.976Z"
+    },
+    {
+      "id": "1782319407688",
+      "title": "Estudos Carla",
+      "content": "Usar ssh sdav\n\nPara usar drawLine no carla, tentar simular meu algoritmo\nhttps://gitlab.lisha.ufsc.br/iot/sdav/-/blob/118-ncap-batch-simulation-setup/external/carlav2/ncap_sim.py?ref_type=heads\n\nDefinir os testes ou arquivos de entrada fuzz/benchmark de teste já na especificação de requisitos, ajudar os revisores\n\nDiminuir de intervalo de desenvolvimento e aumento no intervalo de validação\nEstudar sobre tracking nas issues e milestones, registrar melhor o que tá fazendo",
+      "modifiedAt": "2026-06-26T12:29:19.023Z"
+    },
+    {
+      "id": "1781721805248",
+      "title": "Estudos para POO2",
+      "content": "Estudar GUI, capítulo 15, estudar JTable, JTree\n\nCompletar tarefa para abrir e salvar composit\n\nObjectInputStream e ObjectOUtputStream",
+      "modifiedAt": "2026-06-18T17:43:52.058Z"
     },
     {
       "id": "1770071143250",
       "title": "Noic",
       "content": "Estruturas de Dados Aula 2m problemas Union find",
       "modifiedAt": "2026-05-11T17:53:52.949Z"
+    },
+    {
+      "id": "1769742715885",
+      "title": "Monitor de repositórios",
+      "content": "Projetos\nSobre-mim (Organizar as páginas)\nPCI_Concursos\nMaratona de Programação\nCS50\ndotfiles",
+      "modifiedAt": "2026-04-06T18:08:00.183Z"
     },
     {
       "id": "1769742376063",
@@ -38,5 +56,5 @@
     }
   ],
   "showCountInBar": true,
-  "count": 6
+  "count": 9
 }
