@@ -40,7 +40,7 @@ input {
         // drag false
         // drag-lock
         natural-scroll
-        accel-speed 0.2
+        accel-speed 1
         accel-profile "flat"
         scroll-method "two-finger"
         disabled-on-external-mouse
@@ -421,7 +421,7 @@ binds {
     Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
     Mod+D hotkey-overlay-title="Run an Application: noctalia-shell iniciador" { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "launcher" "toggle"; }
     Mod+E hotkey-overlay-title="Run an Application Tunar" { spawn "thunar"; }
-    Mod+B hotkey-overlay-title="Run an Application Firefox" { spawn "firefox"; }
+    Mod+S hotkey-overlay-title="Run an Application Firefox" { spawn "firefox"; }
     Super+Alt+L hotkey-overlay-title="Lock the Screen: noctalia-shell lockscreen" { spawn "qs -c noctalia-shell ipc call lockScreen lock"; }
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
