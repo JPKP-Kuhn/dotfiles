@@ -153,6 +153,9 @@ alias mv='mv -i'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias py='python3'
+alias compcpp='g++ -std=c++17 -O2 -Wall -Wextra -Wshadow \
+    -fsanitize=address,undefined -fno-sanitize-recover=all \
+    -g -o sol '
 alias code='code-insiders'
 
 alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'

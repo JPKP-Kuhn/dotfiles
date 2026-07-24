@@ -1,6 +1,18 @@
 {
   "notes": [
     {
+      "id": "1784747778474",
+      "title": "Músicas para Game Jam",
+      "content": "https://in-thread.sonic-pi.net/t/free-sample-libraries-whats-out-there/297\ntutorial LMMS",
+      "modifiedAt": "2026-07-22T19:16:46.734Z"
+    },
+    {
+      "id": "1784596271572",
+      "title": "Git book",
+      "content": "capítulo 2.2",
+      "modifiedAt": "2026-07-21T01:11:20.316Z"
+    },
+    {
       "id": "1783633702126",
       "title": "Learn OpenCL",
       "content": "https://ulhpc-tutorials.readthedocs.io/en/latest/gpu/opencl/\nhttps://handsonopencl.github.io/",
@@ -56,5 +68,5 @@
     }
   ],
   "showCountInBar": true,
-  "count": 9
+  "count": 11
 }
