@@ -1,16 +1,16 @@
 {
   "notes": [
     {
-      "id": "1784747778474",
-      "title": "Músicas para Game Jam",
-      "content": "https://in-thread.sonic-pi.net/t/free-sample-libraries-whats-out-there/297\ntutorial LMMS",
-      "modifiedAt": "2026-07-22T19:16:46.734Z"
+      "id": "1785413072339",
+      "title": "Projetos para aprender CMake",
+      "content": "https://www.perplexity.ai/search/968fea6d-f495-4abd-b9a7-9a90e07e7c07\nJunto com link de github de https://github.com/pr0g/cmake-examples",
+      "modifiedAt": "2026-07-30T12:05:01.953Z"
     },
     {
       "id": "1784596271572",
       "title": "Git book",
-      "content": "capítulo 2.2",
-      "modifiedAt": "2026-07-21T01:11:20.316Z"
+      "content": "https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things\ncapítulo 2.4",
+      "modifiedAt": "2026-07-25T17:29:06.093Z"
     },
     {
       "id": "1783633702126",
@@ -23,12 +23,6 @@
       "title": "Estudos Carla",
       "content": "Usar ssh sdav\n\nPara usar drawLine no carla, tentar simular meu algoritmo\nhttps://gitlab.lisha.ufsc.br/iot/sdav/-/blob/118-ncap-batch-simulation-setup/external/carlav2/ncap_sim.py?ref_type=heads\n\nDefinir os testes ou arquivos de entrada fuzz/benchmark de teste já na especificação de requisitos, ajudar os revisores\n\nDiminuir de intervalo de desenvolvimento e aumento no intervalo de validação\nEstudar sobre tracking nas issues e milestones, registrar melhor o que tá fazendo",
       "modifiedAt": "2026-06-26T12:29:19.023Z"
-    },
-    {
-      "id": "1781721805248",
-      "title": "Estudos para POO2",
-      "content": "Estudar GUI, capítulo 15, estudar JTable, JTree\n\nCompletar tarefa para abrir e salvar composit\n\nObjectInputStream e ObjectOUtputStream",
-      "modifiedAt": "2026-06-18T17:43:52.058Z"
     },
     {
       "id": "1770071143250",
@@ -68,5 +62,5 @@
     }
   ],
   "showCountInBar": true,
-  "count": 11
+  "count": 10
 }

@@ -325,7 +325,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Dracula",
+        "predefinedScheme": "Noctalia (default)",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false
@@ -845,14 +845,14 @@
             },
             {
                 "appearance": "dark",
-                "colorScheme": "Tokyo Night",
+                "colorScheme": "Gruvbox",
                 "darkMode": true,
                 "generationMethod": "tonal-spot",
                 "paletteColors": [
-                    "#7aa2f7",
-                    "#bb9af7",
-                    "#9ece6a",
-                    "#f7768e"
+                    "#b8bb26",
+                    "#fabd2f",
+                    "#83a598",
+                    "#fb4934"
                 ],
                 "path": "/home/jpk/Imagens/wallpapers/blade-runner.png",
                 "useWallpaperColors": false

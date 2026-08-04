@@ -17,7 +17,7 @@ local lazy_config = require "configs.lazy"
 require("lazy").setup({
     {
         "NvChad/NvChad",
-        lazy = false,
+        lazy = true,
         branch = "v2.5",
         import = "nvchad.plugins",
     },
@@ -36,12 +36,14 @@ vim.schedule(function()
     require "mappings"
 end)
 
--- Indentation default 4 spaces
+-- Indentation default 2 spaces
 vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.softtabstop = 2
 vim.opt.expandtab = true
+vim.opt.autoindent = true
+vim.opt.cindent = true
 vim.opt.autoindent = true
 
 -- template for c++

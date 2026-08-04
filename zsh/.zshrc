@@ -29,7 +29,7 @@ export REPORTTIME=1
 export SUDO_EDITOR=vim
 
 eval "$(zoxide init zsh)"
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
@@ -149,13 +149,14 @@ alias lt='eza --tree --color=auto --icons'
 
 alias q='exit'
 alias cl='clear'
+alias bf='echo $?'
 alias mv='mv -i'
 alias poweroff='systemctl poweroff'
 alias reboot='systemctl reboot'
 alias py='python3'
 alias compcpp='g++ -std=c++17 -O2 -Wall -Wextra -Wshadow \
     -fsanitize=address,undefined -fno-sanitize-recover=all \
-    -g -o sol '
+    -g'
 alias code='code-insiders'
 
 alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
