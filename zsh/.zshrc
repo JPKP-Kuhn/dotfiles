@@ -23,6 +23,7 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 export QT_QPA_PLATFORM=wayland
 
+
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export REPORTTIME=1
@@ -175,3 +176,5 @@ function y() {
 	rm -f -- "$tmp"
 }
 export PATH="$(npm config get prefix)/bin:$PATH"
+
+export PATH="$HOME/.emacs.d/bin:$PATH"

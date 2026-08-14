@@ -36,11 +36,10 @@ vim.schedule(function()
     require "mappings"
 end)
 
--- Indentation default 2 spaces
-vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()"
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.softtabstop = 2
+-- Indentation default 4 spaces
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.softtabstop = 4
 vim.opt.expandtab = true
 vim.opt.autoindent = true
 vim.opt.cindent = true

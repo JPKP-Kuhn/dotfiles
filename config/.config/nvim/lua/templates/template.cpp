@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
 using namespace std;
-#define _                                                                      \
-  ios_base::sync_with_stdio(false);                                            \
-  cin.tie(NULL);                                                               \
-  cout.tie(NULL);
+#define _                                                                                          \
+    ios_base::sync_with_stdio(false);                                                              \
+    cin.tie(NULL);                                                                                 \
+    cout.tie(NULL);
 #define fr first
 #define sc second
 #define pb push_back
@@ -24,18 +24,18 @@ const ll MOD = 1e9 + 7;   // aritmética modular, números muito grandes
 const double EPS = 1e-9;  // Valor para comparar double
 
 struct point {
-  double x, y;
-  point() { x = y = 0.0; }
-  point(double _x, double _y) : x(_x), y(_y) {}
-  bool operator<(point other) const {
-    if (fabs(x - other.x) > EPS)
-      return x < other.x;
-    return y < other.y;
-  };
+    double x, y;
+    point() { x = y = 0.0; }
+    point(double _x, double _y) : x(_x), y(_y) {}
+    bool operator<(point other) const {
+        if (fabs(x - other.x) > EPS)
+            return x < other.x;
+        return y < other.y;
+    };
 };
 
 int main() {
-  _
+    _
 
-      return 0;
+        return 0;
 }
