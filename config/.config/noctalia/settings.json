@@ -87,7 +87,7 @@
                     "icon": "rocket",
                     "iconColor": "none",
                     "id": "Launcher",
-                    "useDistroLogo": false
+                    "useDistroLogo": true
                 },
                 {
                     "defaultSettings": {
@@ -325,7 +325,7 @@
         "manualSunrise": "06:30",
         "manualSunset": "18:30",
         "monitorForColors": "",
-        "predefinedScheme": "Noctalia (default)",
+        "predefinedScheme": "Dracula",
         "schedulingMode": "off",
         "syncGsettings": true,
         "useWallpaperColors": false

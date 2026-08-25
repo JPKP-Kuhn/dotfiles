@@ -61,7 +61,7 @@ POWERLEVEL10K_STATUS_SHOW_PIPESTATUS=true
 
 # Uncomment one of the following lines to change the auto-update behavior
 # zstyle ':omz:update' mode disabled  # disable automatic updates
-# zstyle ':omz:update' mode auto      # update automatically without asking
+zstyle ':omz:update' mode auto      # update automatically without asking
 # zstyle ':omz:update' mode reminder  # just remind me to update when it's time
 
 # Uncomment the following line to change how often to auto-update (in days).
@@ -145,8 +145,10 @@ alias e='eza --git --icons --group --group-directories-first --sort=name'
 alias ls='eza --color=auto --icons'
 alias l='eza -l --color=auto --icons'
 alias la='eza -a --color=auto --icons'
-alias lla='eza -la --color=auto --icons'
+alias ll='eza -lh --color=auto --icons'
+alias ld='eza -lh --icons --group-directories-first --total-size'
 alias lt='eza --tree --color=auto --icons'
+alias lla='eza -lha --color=auto --icons'
 
 alias q='exit'
 alias cl='clear'
@@ -159,8 +161,6 @@ alias compcpp='g++ -std=c++17 -O2 -Wall -Wextra -Wshadow \
     -fsanitize=address,undefined -fno-sanitize-recover=all \
     -g'
 alias code='code-insiders'
-
-alias update='sudo pacman -Syu --noconfirm && yay -Syu --noconfirm'
 
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
